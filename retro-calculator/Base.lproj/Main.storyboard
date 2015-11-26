@@ -4,6 +4,11 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Minecraft.ttf">
+            <string>Minecraft</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -221,6 +226,16 @@
                                 </subviews>
                                 <animations/>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="4556" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAK-dN-FMe">
+                                <rect key="frame" x="210" y="157" width="200" height="40"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="CmO-zJ-2mt"/>
+                                    <constraint firstAttribute="width" constant="200" id="dty-RQ-81j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="30"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -231,11 +246,13 @@
                             <constraint firstItem="wLg-nm-zOv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8Av-nJ-7pq"/>
                             <constraint firstItem="Wzb-Iw-gru" firstAttribute="centerY" secondItem="wLg-nm-zOv" secondAttribute="centerY" constant="35" id="F12-eg-Rgm"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="CN5-x7-hus" secondAttribute="bottom" id="O61-Wv-ssP"/>
+                            <constraint firstItem="Wzb-Iw-gru" firstAttribute="trailing" secondItem="nAK-dN-FMe" secondAttribute="trailing" id="TN5-bg-xfs"/>
                             <constraint firstItem="Wzb-Iw-gru" firstAttribute="centerX" secondItem="wLg-nm-zOv" secondAttribute="centerX" id="YhC-nh-IcK"/>
                             <constraint firstItem="CN5-x7-hus" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bOK-f5-QQF"/>
                             <constraint firstAttribute="trailing" secondItem="PCm-aK-aVt" secondAttribute="trailing" id="cTK-5S-PHe"/>
                             <constraint firstItem="PCm-aK-aVt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cxD-mH-x2q"/>
                             <constraint firstAttribute="trailing" secondItem="CN5-x7-hus" secondAttribute="trailing" id="omT-qm-MHF"/>
+                            <constraint firstItem="nAK-dN-FMe" firstAttribute="top" secondItem="Wzb-Iw-gru" secondAttribute="top" constant="-68" id="z5g-3R-S9C"/>
                         </constraints>
                     </view>
                 </viewController>
